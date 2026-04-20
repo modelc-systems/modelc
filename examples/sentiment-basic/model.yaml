@@ -1,0 +1,38 @@
+apiVersion: modelc.dev/v0
+kind: ModelContainer
+
+metadata:
+  name: sentiment-basic
+  version: 0.1.0
+  description: Basic sentiment classifier example
+
+runtime:
+  type: python
+  version: "3.11"
+  dependencies: []
+
+artifacts:
+  weights:
+    path: ./model/
+    format: pytorch
+  tokenizer:
+    path: ./tokenizer/
+    format: huggingface
+
+interface:
+  input:
+    type: text
+    schema:
+      text: string
+
+  output:
+    type: classification
+    schema:
+      label: string
+      confidence: float
+
+entrypoint:
+  command: python run.py
+
+contracts:
+  - text-classification-v1
