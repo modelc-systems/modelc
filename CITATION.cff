@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+title: modelc
+message: "If you use this software, please cite it using the metadata from this file."
+type: software
+
+authors:
+  - family-names: Himpfen
+    given-names: Brandon
+    affiliation: Bold Outlook
+
+abstract: >
+  Initial release.
+
+  modelc is a ready-to-run Python CLI skeleton for portable, inspectable AI model
+  containers, enabling reproducible execution and structured inspection of model
+  inputs, outputs, and runtime behavior.
+
+doi: 10.5281/zenodo.19686387
+version: 0.1.0
+date-released: 2026-04-21
+
+url: https://github.com/modelc-systems/modelc
+repository-code: https://github.com/modelc-systems/modelc/tree/v0.1.0
+
+license: MIT
+
+keywords:
+  - AI systems
+  - model containers
+  - reproducibility
+  - CLI tools
+  - machine learning infrastructure
