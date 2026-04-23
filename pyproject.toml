@@ -5,14 +5,48 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "modelc"
 version = "0.1.0"
-description = "CLI for portable, inspectable AI model containers"
+description = "CLI and specification for portable, inspectable AI model containers"
 readme = "README.md"
 requires-python = ">=3.10"
+
+authors = [
+  { name = "Brandon Himpfen" }
+]
+
+license = { text = "MIT" }
+
+keywords = [
+  "ai",
+  "machine learning",
+  "mlops",
+  "model deployment",
+  "developer tools",
+  "cli",
+  "infrastructure"
+]
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Build Tools",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Operating System :: OS Independent"
+]
+
 dependencies = [
   "typer>=0.12.3",
   "PyYAML>=6.0.1",
   "pydantic>=2.7.0"
 ]
+
+[project.urls]
+Homepage = "https://github.com/modelc-systems/modelc"
+Repository = "https://github.com/modelc-systems/modelc"
+Issues = "https://github.com/modelc-systems/modelc/issues"
 
 [project.scripts]
 modelc = "modelc.cli:app"
